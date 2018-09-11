@@ -1,0 +1,32 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<div class="vertical">
+  <div class="formCompleto">
+        <div class="tituloForm">
+         <!-- <img  class="titulo" src="assets/imgs/nube.png" width="80%" height="20%" -->
+          <span class="linea1">Tabla</span>
+          <span class="linea2">de idiomas</span>
+        </div>
+          <div class="form">
+              <input type="text" name="u" placeholder="Correo" required="required" value={{userActual}}/>
+              <input type="password" name="p" placeholder="Contraseña" required="required" value={{passActual}}/>
+              <button ion-button >Ingresar</button>
+          </div>
+  </div>
+ 
+          <div class="nube1">Ingles</div>
+          <div class="nube2">Español</div>
+          <img  class="nenes" src="assets/imgs/paises.png" width="100%" height="20%" >
+          <div id="usuarios">
+              <button ion-button round color="danger"  (click)="setearUser('invitado@gmail.com','11')">Invitado</button>
+              <button ion-button round color="danger"  (click)="setearUser('usuario@gmail.com','22')">Usuario</button>
+              <button ion-button round color="danger"  (click)="setearUser('admin@gmail.com','33')">Admin</button>
+              <button ion-button round color="danger"  (click)="setearUser('tester@gmail.com','44')">Tester</button>
+              <button ion-button round color="danger"  (click)="setearUser('anonimo@gmail.com','55')">An&oacute;nimo</button>
+          </div>
+</div>
